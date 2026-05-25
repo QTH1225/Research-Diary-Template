@@ -1,7 +1,11 @@
+<div align="center">
+
 # Research Diary Template
+
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-CC%20BY--SA%203.0-lightgrey.svg)
 ![LaTeX](https://img.shields.io/badge/LaTeX-Template-orange.svg)
+</div>
 
 这是一个基于 [Mikhail Klassen](mailto:mikhail.klassen@gmail.com) 模板改进的科研日记 LaTeX 模板，由[Tianhao Qin](https://github.com/QTH1225)于2026年进行简单改进，支持中文输入并保留了英文排版的专业性。
 
@@ -79,4 +83,8 @@
 ### 主要特点与条款：
 1. **署名 (Attribution)**：您必须给出适当的署名，提供指向本许可协议的链接，同时标注是否对原始作品作出了修改。
 2. **相同方式共享 (ShareAlike)**：如果您再混合、转换或者基于本作品进行创作，您必须基于与原先许可协议相同的许可协议分发您所贡献的作品。
-3. **不加限制**：您可以以任何形式或格式复制、发行本作品，甚至用于商业目的，只要您遵守上述条款。
+3. **不加限制**：您可以以任何形式 or 格式复制、发行本作品，甚至用于商业目的，只要您遵守上述条款。
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=QTH1225/Research-Diary-Template&type=Date)](https://star-history.com/#QTH1225/Research-Diary-Template&Date)
