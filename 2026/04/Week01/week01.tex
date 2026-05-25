@@ -1,0 +1,27 @@
+\subsection*{Week 01: Initial conditions}
+\addcontentsline{toc}{subsection}{Week 01: Initial conditions}
+
+\subsection*{Inner radius}
+
+中文测试：这是一段用于验证中文排版的示例文字（应使用楷体显示）。
+
+The density profile follows an $r^{-3/2}$ power law. To avoid a singularity at the center, an interpolation is done over a radius. This inner radius is defined in the parameter file. It should follow the prescription of a singular isothermal sphere (see Binney \& Tremaine p.305\supercite{binney2008}), which is also the definition of the King radius:
+\begin{equation}
+r_0 \equiv \sqrt{\frac{9\sigma^2}{4\pi G\rho_0}}
+\end{equation}
+where $\sigma$ is the velocity dispersion and could be estimated as $\sigma = \mathcal{M} c_s$, where $c_s = \sqrt{\gamma P/\rho} = \sqrt{\gamma k_B T / \mu}$ is the sound speed.
+
+The isothermal sound speed in our simulation was estimated
+\begin{equation}
+c_s = \sqrt{\frac{k_b T}{\mu m_p}}
+\end{equation}
+I'm unsure why a factor of $\gamma$ was not included. For 30 K, this gives a sound speed of about 34000 cm/s or 0.34 km/s. At a Mach number of 5, this gives a supersonic dispersion of $\sigma$ = 1.7 km/s.
+
+This gives an inner radius of $r_0 \approx$ 1.595e17.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.2\textwidth]{2026/04/Week01/logo.png}
+	\caption{Example Image (using logo.png)}
+\end{figure}
+

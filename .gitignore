@@ -1,0 +1,26 @@
+# LaTeX
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.run.xml
+*.synctex.gz
+*.toc
+*.log
+*.pdf
+*.out
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.maf
+*.mtc
+*.mtc1
+*.pyg
+
+# OS files
+.DS_Store
+Thumbs.db

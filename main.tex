@@ -1,0 +1,91 @@
+%%% Research Diary - Entry
+%%% Template by Mikhail Klassen, April 2013
+%%% 
+\documentclass[12pt,letterpaper]{ctexart}
+
+% Chinese support: use KaiTi for CJK if available.
+% Fallbacks keep compilation working across machines.
+\IfFontExistsTF{KaiTi}{\setCJKmainfont{KaiTi}}{%
+	\IfFontExistsTF{\string 楷体}{\setCJKmainfont{\string 楷体}}{%
+		\IfFontExistsTF{SimKai}{\setCJKmainfont{SimKai}}{%
+			\IfFontExistsTF{STKaiti}{\setCJKmainfont{STKaiti}}{%
+				\IfFontExistsTF{Kaiti SC}{\setCJKmainfont{Kaiti SC}}{%
+					\setCJKmainfont{FandolKai-Regular}%
+				}%
+			}%
+		}%
+	}%
+}
+
+\ctexset{today=old}
+
+\newcommand{\workingDate}{}
+\newcommand{\userName}{Your Name}
+\newcommand{\institution}{China University\\of Mining and Technology}
+\usepackage{researchdiary_png}
+\usepackage[backend=biber,style=gb7714-2015]{biblatex}
+\addbibresource{references.bib}
+\usepackage{xparse}
+% Make citations appear as superscripted bracketed numbers like XXX[1].
+% Usage: XXX\supercite{key} or XXX\supercite[][p.~10]{key}
+\RenewDocumentCommand{\supercite}{O{} O{} m}{%
+	\textsuperscript{\cite[#1][#2]{#3}}%
+}
+% To add your univeristy logo to the upper right, simply
+% upload a file named "logo.png" using the files menu above.
+
+\begin{document}
+\begin{titlepage}
+\thispagestyle{empty}
+\pagestyle{empty}
+\centering
+\vspace*{2cm}
+{\Huge\bfseries Research Diary\par}
+\vspace*{\fill}
+{\huge \textsc{\userName}\par}
+\vspace{0.8cm}
+{\Large \institution\par}
+\vspace*{\fill}
+{\Large \today\par}
+\vspace*{1.5cm}
+\end{titlepage}
+
+\renewcommand{\contentsname}{Contents}
+\tableofcontents
+\clearpage
+
+\clearpage
+\pagestyle{fancy}
+
+\univlogo
+
+\title{Research Diary - Example Entry}
+
+\renewcommand{\workingDate}{\textsc{2026 $|$ April $|$ 01}}
+{\Huge April 2026}\\[2mm]
+\addcontentsline{toc}{section}{2026 April}
+
+\textit{N.B.: The diary content is now split into weekly files under the year/month/week folders.}
+
+\input{2026/04/Week01/week01}
+\input{2026/04/Week02/week02}
+
+\newpage
+\univlogo
+
+\title{Research Diary - Example Entry}
+
+\renewcommand{\workingDate}{\textsc{2026 $|$ May $|$ 01}}
+{\Huge May 2026}\\[2mm]
+\addcontentsline{toc}{section}{2026 May}
+
+\textit{N.B.: The diary content is now split into weekly files under the year/month/week folders.}
+
+\input{2026/05/Week01/week01}
+\input{2026/05/Week02/week02}
+
+\newpage
+\printbibliography[title={References}]
+
+
+\end{document}

@@ -1,0 +1,21 @@
+\subsection*{Week 02: Rotation}
+\addcontentsline{toc}{subsection}{Week 02: Rotation}
+
+Set the same ratio of rotational to gravitational energy $\beta$ as in Peters et al. 2010a. According to Goodman et al. (1993)\supercite{goodman1993}, this is given by (see equation 6):
+\begin{equation}
+\beta = \frac{1}{4 \pi G \rho_0} \omega^2
+\end{equation}
+In practice we can probably use the central density $\rho_c$ instead of determining an average density $\rho_0$. Looking at the numbers from other simulations, we could use an $\omega$ of 1.3e-14.
+
+The link to the Goodman et al. (1993) paper:\\
+{\tt http://adsabs.harvard.edu/cgi-bin/bib\_query?1993ApJ...406..528G}
+
+We want to complete our simulation with a similar $\beta$ to check if disks form in the turbulent environment.
+
+The $\omega$ necessary to produce a $\beta = 0.05$ would be
+\begin{equation}
+\omega = \sqrt{4 \pi G \rho_0 \beta} \approx 7.15\times 10^{-13}
+\end{equation}
+using $\rho_0 = \rho_c = 1.22\times10^{-17}$.
+
+After testing this, however, I found that the rotation was much too fast. Perhaps using $\rho_0 = \rho_c$ was not a very good assumption at all, since $\rho_c$ is orders of magnitude larger than the average. I wrote a little Python script that sums up all the mass inside the outer radius and divides it by the total volume, defined by the outer radius. In this case, for an outer radius of $5.97402\times 10^{18}$ cm and about 1000 $\Msun$, we get an average density of $2.96415\times 10^{-21}$ g/cm$^3$, which gives us $\omega = 1.114 \times 10^{-14}$.
