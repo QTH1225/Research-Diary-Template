@@ -7,7 +7,7 @@
 ![LaTeX](https://img.shields.io/badge/LaTeX-Template-orange.svg)
 </div>
 
-这是一个基于 [Mikhail Klassen](mailto:mikhail.klassen@gmail.com) 模板改进的科研日记 LaTeX 模板，由[Tianhao Qin](https://github.com/QTH1225)于2026年进行简单改进，支持中文输入并保留了英文排版的专业性。
+这是一个基于 [Mikhail Klassen](mailto:mikhail.klassen@gmail.com) 模板改进的科研日记 LaTeX 模板，由[Yana](https://github.com/QTH1225)于2026年进行简单改进，支持中文输入并保留了英文排版的专业性。
 
 ## 效果展示
 
